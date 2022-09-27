@@ -1,4 +1,5 @@
 import React from "react";
+import "./WelcomeBack.css";
 
 function WelcomeBack({ name = "valued customer", language }) {
   let greeting = "Welcome";
@@ -7,7 +8,9 @@ function WelcomeBack({ name = "valued customer", language }) {
   }
 
   return (
-    <div>{greeting}, {name}!</div>
+    <div className="WelcomeBack">
+      <p>{greeting}, <span>{name}</span>!</p>
+    </div>
   );
 }
 
